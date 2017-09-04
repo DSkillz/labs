@@ -1,4 +1,4 @@
-# Awesome JS Online ToolKit
+# AwJStoolKit - Awesome JS Online ToolKit
 Bienvenue chers étudiants OC ! Vous cherchez à apprendre de manière collective dans la joie et la bonne humeur
 comme nous savons si bien le faire chez [OpenClassrooms](https://openclassrooms.com/) ?
 
