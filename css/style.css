@@ -1,0 +1,55 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.script_area {
+  width: 47%;
+}
+
+.script_area h3 {
+  text-align: center;
+}
+
+code, #output {
+    height: 300px;
+    overflow-y: scroll;
+    word-wrap: break-word;
+}
+
+#output {
+
+}
+
+#output {
+    margin: auto;
+    text-align: center;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+background-color: #DABDD8;
+}
+
+#scrolltop {
+  margin: 30px;
+}
