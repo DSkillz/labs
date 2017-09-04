@@ -37,6 +37,7 @@ Pour signaler un problème, proposer des fonctionnalités: [les bonnes pratiques
 ## Pré-requis
 * Assez bon niveau d'anglais dans la mesure du possible
 * [Bases de Programmation Orientée Objet Javascript](https://openclassrooms.com/courses/apprenez-a-coder-avec-javascript/trop-classe-la-poo)
+* Être curieux, pro-actif niveau veille technologique (voire scientifique), et aimer l'apprentissage (auto-didacte et didacte, entendre par autrui)
 
 Vous trouverez comment nous joindre dans la section Contacts (était-il besoin de le préciser ? :)
 
