@@ -54,7 +54,8 @@ Vous trouverez comment nous joindre dans la section Contacts (était-il besoin d
 ## License
 
 ## Contacts
-[Awesome JS Online ToolKit Workplace Group for OpenClassrooms Mentors | Students](https://openclassrooms.facebook.com/groups/113438132681187/?nux=highlight_create_post)
+* [Awesome JS Online ToolKit Workplace Group for OpenClassrooms Mentors | Students](https://openclassrooms.facebook.com/groups/113438132681187/?nux=highlight_create_post)
+* [Le groupe Discord des dev](https://discord.gg/R2cXtdg)
 
 ## Les suggestions d'amélioration sont les bienvenues, comme vous !
 ##### * Issue = problèmes en anglais
