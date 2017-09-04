@@ -44,7 +44,7 @@ Vous trouverez comment nous joindre dans la section Contacts (était-il besoin d
 * Connexion et [gestion compte utilisateur (pistes)](https://www.google.fr/search?q=Syst%C3%A8me+de+connexion+espace+perso+avec+Node.js&ie=utf-8&oe=utf-8&client=firefox-b-ab&gfe_rd=cr&dcr=0&ei=UK-sWcXIOqP_8AesyqmYAw): express.js, websockets (socket.io),
  [d'autres pistes ici également](https://www.google.fr/search?client=firefox-b-ab&dcr=0&q=user+account+socket.io&oq=user+account+socket.io&gs_l=psy-ab.3...5588.5588.0.6320.1.1.0.0.0.0.68.68.1.1.0....0...1..64.psy-ab..0.0.0.PxPl4vZqAa0)
 * [Vue.js](https://fr.vuejs.org/v2/guide/index.html), [formation Vue 2 Grafikart]()
-* [Three.js](https://www.alsacreations.com/tuto/lire/1572-webgl-3d-three-canvas-threejs.html) / [Babylon.js](https://www.demonixis.net/premier-pas-en-3d-avec-webgl-et-babylon-js/)([WebGL](https://www.google.fr/search?q=%22webgl&ie=utf-8&oe=utf-8&client=firefox-b-ab&gfe_rd=cr&dcr=0&ei=xyWtWcj8D6n_8Ae3kK6wBg))
+* [Three.js](https://www.alsacreations.com/tuto/lire/1572-webgl-3d-three-canvas-threejs.html) / [Babylon.js](https://www.demonixis.net/premier-pas-en-3d-avec-webgl-et-babylon-js/) ([WebGL](https://www.google.fr/search?q=%22webgl&ie=utf-8&oe=utf-8&client=firefox-b-ab&gfe_rd=cr&dcr=0&ei=xyWtWcj8D6n_8Ae3kK6wBg))
 * [Shader](https://shaderfrog.com/)
 * [ARCore for Augmented Reality in Browser](https://www.blog.google/products/google-vr/arcore-augmented-reality-android-scale/)
 
