@@ -1,4 +1,4 @@
-# AwJStoolKit - Awesome JS Online ToolKit
+# AwJStoolKit | Awesome JS Online ToolKit
 Bienvenue chers étudiants OC ! Vous cherchez à apprendre de manière collective dans la joie et la bonne humeur
 comme nous savons si bien le faire chez [OpenClassrooms](https://openclassrooms.com/) ?
 
@@ -19,7 +19,7 @@ vous en faites pas, ce sera bien évidemment **progressif** ! Mais le plus tôt 
 rejoindre ! Alors, à vos claviers !
 
 **Avis à la populasse back qui affectionne Symphony et autres**
-*Le PHP sera banni ! Cette web app sera propulsée uniquement par Javscript ! front et back (node.js, express.js et consorts)!*
+*Le PHP sera banni ! Cette web app sera propulsée uniquement par Javascript ! front et back (node.js, express.js et consorts)!*
 
 ## Objectifs
 * Entrevoir (démontrer !) la puissance et le monde de possibilités de l'univers JS par la pratique.
