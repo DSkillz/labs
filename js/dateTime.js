@@ -12,4 +12,4 @@ function afficher() {
     oD.setHours(lD.getUTCHours() + offsetUTC);
 
     document.getElementById('output').innerHTML = "Ici, on est : " + lD.toLocaleString() + "<br>" + "Là-bas, on est : " + oD.toLocaleString();
-}
+}//je met un ici un commentaire
