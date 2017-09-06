@@ -45,9 +45,8 @@
 
       $.getScript(scriptPath, function( data, textStatus, jqxhr ) {
         var writeScript = document.querySelector('code');
-        var writeScriptOutput = data;
         //console.log(writeScriptOutput);
-        writeScript.innerHTML = writeScriptOutput; //do something with request.responseText
+        writeScript.innerHTML = data; //do something with request.responseText
         Prism.highlightElement(writeScript);
       });
     };
@@ -69,8 +68,7 @@
 
     $(".divers").click(function() {
       console.clear();
-      displayScript('divers.js')
-      $.getScript("js/divers.js");
+      displayScript('divers.js');
       if (typeof realtime != 'undefined') {
         clearInterval(realtime);
       }
@@ -78,8 +76,7 @@
 
     $(".dateTime").click(function() {
       console.clear();
-      displayScript('dateTime.js')
-      $.getScript("js/dateTime.js");
+      displayScript('dateTime.js');
       if (typeof realtime != 'undefined') {
         clearInterval(realtime);
       }
@@ -87,8 +84,7 @@
 
     $(".printCurrentWindow").click(function() {
       console.clear();
-      displayScript('divers.js')
-      $.getScript("js/printCurrentWindow.js");
+      displayScript('divers.js');
       if (typeof realtime != 'undefined') {
         clearInterval(realtime);
       }
@@ -96,8 +92,7 @@
 
     $(".tests-divers").click(function() {
       console.clear();
-      displayScript('tests-divers.js')
-      $.getScript("js/tests-divers.js");
+      displayScript('tests-divers.js');
       if (typeof realtime != 'undefined') {
         clearInterval(realtime);
       }
@@ -105,8 +100,7 @@
 
     $(".tada").click(function() {
       console.clear();
-      displayScript('tada.js')
-      $.getScript("js/tada.js");
+      displayScript('tada.js');
       if (typeof realtime != 'undefined') {
         clearInterval(realtime);
       }
@@ -114,8 +108,7 @@
 
     $(".webgl").click(function() {
       console.clear();
-      displayScript('webgl.js')
-      $.getScript("js/webgl.js");
+      displayScript('webgl.js');
       if (typeof realtime != 'undefined') {
         clearInterval(realtime);
       }

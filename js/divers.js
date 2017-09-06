@@ -34,8 +34,8 @@ var pokeLength =
     }, 0);
 output.innerHTML += pokeLength + '<br><br>'; // 27
 
-var input = "I'm %USER% and I live in %COUNTRY%"
-var data = [{token: '%USER%', value: 'lionel'}, {token: '%COUNTRY%', value: 'France'}]
+var input = "I'm %USER% and I live in %COUNTRY%";
+var data = [{token: '%USER%', value: 'lionel'}, {token: '%COUNTRY%', value: 'France'}];
 
 var sortie = data.reduce(function (memo, item) {
     return memo.replace(item.token, item.value);
@@ -43,7 +43,7 @@ var sortie = data.reduce(function (memo, item) {
 
 output.innerHTML += sortie + '<br><br>'; // output = "I'm lionel and I live in France"
 
-function test(optional) {
+function functionTest(optional) {
 
 }; // déclaration de Fonction
 
