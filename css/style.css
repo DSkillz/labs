@@ -53,3 +53,7 @@ background-color: #DABDD8;
 #scrolltop {
   margin: 30px;
 }
+
+.token.lf {
+    display: none;
+}

@@ -2,126 +2,133 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/prism.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism-okaidia.min.css">
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/87/three.min.js" charset="utf-8"></script>
-  <script src="js/detector.js" charset="utf-8"></script>
-  <script src="js/stats.js" charset="utf-8"></script>
-  <script src="js/prism.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism-okaidia.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/87/three.min.js" charset="utf-8"></script>
+    <script src="js/detector.js" charset="utf-8"></script>
+    <script src="js/stats.js" charset="utf-8"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/OrbitControls.js"></script>
 
 </head>
 
 <body>
-  <main>
+<main>
     <h2>Charger les scripts js suivants</h2>
     <nav>
-      <button class="divers" type="button" name="divers">divers</button>
-      <button class="dateTime" type="button" name="button">dateTime</button>
-      <button class="tests-divers" type="button" name="button">tests-divers</button>
-      <button class="tada" type="button" name="button">tada</button>
-      <button class="printCurrentWindow" type="button" name="button">printCurrentWindow</button>
-      <button class="webgl" type="button" name="button">webGL</button>
+        <button class="divers" type="button" name="divers">divers</button>
+        <button class="dateTime" type="button" name="button">dateTime</button>
+        <button class="tests-divers" type="button" name="button">tests-divers</button>
+        <button class="tada" type="button" name="button">tada</button>
+        <button class="printCurrentWindow" type="button" name="button">printCurrentWindow</button>
+        <button class="webgl" type="button" name="button">webGL</button>
     </nav>
     <section>
-      <div class="script_area">
-        <h3>Code du script choisi</h3>
-        <pre class="prism"><code id="input" class="language-javascript"></code></pre>
-      </div>
-      <div class="script_area">
-        <h3>Sortie du script</h3>
-        <div id="output"></div>
-      </div>
+        <div class="script_area">
+            <h3>Code du script choisi</h3>
+            <pre class="prism"><code id="input" class="language-javascript"></code></pre>
+        </div>
+        <div class="script_area">
+            <h3>Sortie du script</h3>
+            <div id="output"></div>
+        </div>
     </section>
     <a href="#" id="scrolltop">ScrollTop</a>
-  </main>
+</main>
 
-  <script type="text/javascript">
+<script type="text/javascript">
     function displayScript(fileName) {
-      scriptPath = 'js/' + fileName;
+        scriptPath = 'js/' + fileName;
 
-      $.getScript(scriptPath, function( data, textStatus, jqxhr ) {
-        var writeScript = document.querySelector('code');
-        //console.log(writeScriptOutput);
-        writeScript.innerHTML = data; //do something with request.responseText
-        Prism.highlightElement(writeScript);
-      });
-    };
+        $.getScript(scriptPath, function (data, textStatus) {
+            var writeScript = document.querySelector('code');
+            //console.log(writeScriptOutput);
+            writeScriptOutput= data; //.replace(/\r?\n|\r/g, '')
+            writeScript.innerHTML = writeScriptOutput; //do something with request.responseText
+            Prism.highlightElement(writeScript);
+        });
+    }
 
     var output = document.getElementById('output');
 
     if (typeof jQuery == 'undefined') {
-      output.textContent += "test";
+        output.textContent += "test";
     } else {
-      output.textContent += "jQuery chargé";
+        output.textContent += "jQuery chargé";
     }
 
-    $("#scrolltop").click(function() {
-      $("#output").animate({
-        scrollTop: 0
-      }, "slow");
-      return false;
+    $("#scrolltop").click(function () {
+        $("#output").animate({
+            scrollTop: 0
+        }, "slow");
+        return false;
     });
 
-    $(".divers").click(function() {
-      console.clear();
-      displayScript('divers.js');
-      if (typeof realtime != 'undefined') {
-        clearInterval(realtime);
-      }
+    $(".divers").click(function () {
+        console.clear();
+        displayScript('divers.js');
+        if (typeof realtime != 'undefined') {
+            clearInterval(realtime);
+        }
     });
 
-    $(".dateTime").click(function() {
-      console.clear();
-      displayScript('dateTime.js');
-      if (typeof realtime != 'undefined') {
-        clearInterval(realtime);
-      }
+    $(".dateTime").click(function () {
+        console.clear();
+        displayScript('dateTime.js');
+        if (typeof realtime != 'undefined') {
+            clearInterval(realtime);
+        }
     });
 
-    $(".printCurrentWindow").click(function() {
-      console.clear();
-      displayScript('divers.js');
-      if (typeof realtime != 'undefined') {
-        clearInterval(realtime);
-      }
+    $(".printCurrentWindow").click(function () {
+        console.clear();
+        displayScript('divers.js');
+        if (typeof realtime != 'undefined') {
+            clearInterval(realtime);
+        }
     });
 
-    $(".tests-divers").click(function() {
-      console.clear();
-      displayScript('tests-divers.js');
-      if (typeof realtime != 'undefined') {
-        clearInterval(realtime);
-      }
+    $(".tests-divers").click(function () {
+        console.clear();
+        displayScript('tests-divers.js');
+        if (typeof realtime != 'undefined') {
+            clearInterval(realtime);
+        }
     });
 
-    $(".tada").click(function() {
-      console.clear();
-      displayScript('tada.js');
-      if (typeof realtime != 'undefined') {
-        clearInterval(realtime);
-      }
+    $(".tada").click(function () {
+        console.clear();
+        displayScript('tada.js');
+        if (typeof realtime != 'undefined') {
+            clearInterval(realtime);
+        }
     });
 
-    $(".webgl").click(function() {
-      console.clear();
-      displayScript('webgl.js');
-      if (typeof realtime != 'undefined') {
-        clearInterval(realtime);
-      }
+    $(".webgl").click(function () {
+        console.clear();
+        displayScript('webgl.js');
+        if (typeof realtime != 'undefined') {
+            clearInterval(realtime);
+        }
     });
-  </script>
+</script>
 
-  <script id="shader-vs" type="x-shader/x-vertex">
+<script id="shader-vs" type="x-shader/x-vertex">
     attribute vec2 a_position; void main() { gl_Position = vec4(a_position, 0, 1); }
-  </script>
 
-  <script id="shader-fs" type="x-shader/x-fragment">
+
+</script>
+
+<script id="shader-fs" type="x-shader/x-fragment">
     void main() { gl_FragColor = vec4(0,1,0,1); }// green
-  </script>
+
+
+</script>
 </body>
 
 </html>
