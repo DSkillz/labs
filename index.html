@@ -27,6 +27,7 @@
         <button class="tada" type="button" name="button">tada</button>
         <button class="printCurrentWindow" type="button" name="button">printCurrentWindow</button>
         <button class="webgl" type="button" name="button">webGL</button>
+        <button class="previewUploadedFile" type="button" name="button">previewUploadedFile</button>
     </nav>
     <section>
         <div class="script_area">
@@ -50,7 +51,7 @@
             //console.log(writeScriptOutput);
             writeScriptOutput= data; //.replace(/\r?\n|\r/g, '')
             writeScript.innerHTML = writeScriptOutput; //do something with request.responseText
-            Prism.highlightElement(writeScript);
+            Prism.highlightElement(writeScript, Prism.languages.javascript);
         });
     }
 
@@ -112,6 +113,14 @@
     $(".webgl").click(function () {
         console.clear();
         displayScript('webgl.js');
+        if (typeof realtime != 'undefined') {
+            clearInterval(realtime);
+        }
+    });
+
+    $(".previewUploadedFile").click(function () {
+        console.clear();
+        displayScript('previewUploadedFile.js');
         if (typeof realtime != 'undefined') {
             clearInterval(realtime);
         }

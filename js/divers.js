@@ -91,3 +91,50 @@ var jQuery = 'rapp';
 (function ($) {
     // $ == jQuery;
 })(jQuery);
+
+
+// If you're in a function then var will create a local variable, "no var" will look up the scope chain until it finds the variable or hits the global scope (at which point it will create it):
+
+// These are both globals
+var foo = 1;
+bar = 2;
+
+function()
+{
+    var foo = 1; // Local
+    bar = 2;     // Global
+
+    // Execute an anonymous function
+    (function()
+    {
+        var wibble = 1; // Local
+        foo = 2; // Inherits from scope above (creating a closure)
+        moo = 3; // Global
+    }())
+}
+
+// If you're not doing an assignment then you need to use var:
+
+var x; // Declare x
+
+
+// énumérer les propriétés d'un objet seulement (sans les méthodes)
+Object.getOwnPropertyNames(obj).forEach(
+    function (val, idx, array) {
+
+        if (typeof obj[val] !== "function") {
+            console.log(val + ' -> ' + obj[val]); }
+    }
+);
+
+// Default obj.pwd property value, allow to use it later
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy
+var handler = {
+    get: function(target, name) {
+        return name in target ?
+            target[name] :
+            0;
+    }
+};
+
+var pwd = new Proxy({}, handler);
